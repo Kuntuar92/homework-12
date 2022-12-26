@@ -1,5 +1,6 @@
 package tests.demoqa;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.appear;
@@ -10,6 +11,7 @@ import static io.qameta.allure.Allure.step;
 
 public class RegistrationTests extends TestBase {
 
+    @Tag("Registration")
     @Test
     void successfulRegistrationTest() {
         step("Open registrations form", () -> {
